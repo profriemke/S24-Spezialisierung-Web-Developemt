@@ -1,1 +1,1 @@
-# S24-Spezialisierung-Web--Developemt
+# S24 Spezialisierung Web Developemt
