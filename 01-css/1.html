@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: inline-block;
+        }
+
+        .betrag::after {
+            content: " €";
+        }
+
+        div p {
+            background-color: green;
+        }
+
+        h1+p {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Text</h1>
+    <p>
+        ein lustige <img src="https://img.riemke.dev/100/100"> Text für die <a href="#">HdM</a> und andere
+    </p>
+    <p>
+        Rechnungsbetrag: <span class="betrag">1000</span>
+    </p>
+    <div>
+        draussen div
+        <p>Drinnen p</p>
+    </div>
+    <div>
+        zweites div
+    </div>
+</body>
+
+</html>
