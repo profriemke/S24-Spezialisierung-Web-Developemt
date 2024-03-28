@@ -1,0 +1,23 @@
+$color: green;
+div {
+    background-color: $color;
+}
+
+h1{
+    color: $color;
+}
+
+.unterbox{
+    background-color: $color;
+    &:hover{
+        background-color: silver;
+    }
+    .box{
+        background-color: #a52a2a;
+        color: yellow;
+         &:hover{
+        background-color: silver;
+    }
+   
+    }
+}

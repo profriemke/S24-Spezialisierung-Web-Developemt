@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ani {
+            from {
+                transform: rotate(0);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes opa {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.3
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        #box1 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: ani 1s infinite linear;
+        }
+
+        #box2 {
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(64, 255, 0);
+            animation: opa 0.25s infinite linear alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">WERBUNG</div>
+    <div id="box2">WERBUNG</div>
+
+</body>
+
+</html>
