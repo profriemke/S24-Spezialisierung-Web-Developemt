@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="summand1">+
+    <input type="text" id="summand2">
+    <button onclick="addiere()">=</button>
+    <button onclick="machEins()">eine eins</button>
+    <span id="ergebnis">0</span>
+
+
+    <script>
+
+        function addiere() {
+            let summand1 = document.getElementById("summand1")
+            let summand2 = document.getElementById("summand2")
+            let ergebnis = document.getElementById("ergebnis")
+            console.log(summand1)
+
+            let summe = 0;
+            summe = parseInt(summand1.value) + parseInt(summand2.value)
+
+            ergebnis.innerHTML = summe
+        }
+        function machEins(){
+            let summand1 = document.getElementById("summand1")
+            summand1.value = 1
+        }
+    </script>
+</body>
+
+</html>
